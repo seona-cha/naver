@@ -502,6 +502,34 @@
 }
 /*************** FIXED ****************/
 .group-fixed{
+    display: flex;
+    gap: 10px;
     position: fixed;
-    bottom: 0;right: 0;
+    bottom: 23px;right: 23px;
 }
+.group-fixed button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #dadcdf;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.15)
+}
+.group-fixed button::before{
+    display: block;
+    width: 16px;
+    height: 16px;
+    content:'';
+    background: url(../images/main_sprite.png) no-repeat -318px -270px/ 424px 409px;
+}
+.group-fixed #topBtn::before{background-position: -318px -270px;}
+.group-fixed #setBtn::before{background-position: -233px -270px;}
+.group-fixed button:hover{
+    background: #f7f7f8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
+}
+.group-fixed #setBtn:hover::before{background-position: -216px -270px;}
+.group-fixed #topBtn:hover::before{background-position: -301px -270px;}

@@ -7,3 +7,9 @@ $(window).scroll(function(){
         $(`.group-search`).addClass(`fixed`);
     }
 })
+$(`#topBtn`).click(function(){
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    });
+   })

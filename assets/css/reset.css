@@ -16,4 +16,5 @@ body{
     letter-spacing:-0.04em;
     color:#101010;
     font-size: 16px;
+    overflow-x: scroll;
 }
