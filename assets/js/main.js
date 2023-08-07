@@ -1,0 +1,9 @@
+// 검색창 토글
+$(window).scroll(function(){
+    curr = $(window).scrollTop();
+    if(curr < 200){
+        $(`.group-search`).removeClass(`fixed`);
+    }else{
+        $(`.group-search`).addClass(`fixed`);
+    }
+})
